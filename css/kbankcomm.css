@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*해당 사이트의 모든 페이지에 적용할 공통(헤더,푸터) 스타일*/
+
+#hd{}
+#hd .top{text-align: right;
+        background-color: #f7f8f3;
+        border-bottom: 1px solid #eeeeec;
+        color: #8d8a83; font-size: 12px;
+        padding-top: 10px; padding-bottom: 8px;}
+
+
+#hd .top2{padding: 15px 0; height: 50px;}
+#hd .top2 h1{float:left;}
+#hd .top2 nav{float:left; padding-left: 120px;}
+#hd .top2 nav .depth1>li{padding: 8px 27px; float: left;
+    font-weight: 400;}    
+#hd .top2 nav .depth1>li:hover>a{color:#e55b72; 
+                                border-bottom: 3px solid #e55b72;
+                                padding-bottom: 10px; }
+
+#hd .top2 nav .depth1>li:last-child{color: #8a827f; }
+
+/*#hd .top2 nav .depth1>li:hover .depth2{display: block;}*/
+
+#hd .top2 nav .depth2{position: absolute; top: 0px; left: 0; z-index: 20;
+display: none; margin-top: 30px; padding-top: 30px;}
+#hd .top2 nav .depth2>li{float: left; width: 180px; height: 168px;
+            border-right: 1px solid #eaeaea; padding-left: 15px;}
+#hd .top2 nav .depth2>li:last-child{border-right: 0;}
+
+#hd .top2 nav .depth2>li>a{font-weight: 500; font-size: 15px;}
+
+#hd .top2 nav .depth3>li{padding: 5px 0; font-weight: 100; font-size: 14px;}
+#hd .top2 nav .depth3>li:hover{color: #e55b72;}
+
+.topMenubg{height: 238px; background-color: #fff;
+    box-shadow: 0 5px 5px #ccc;
+    position: absolute; top: 100px; left: 0; width: 100%; z-index: 10;
+display: none;}
+#hd .top2 button{float:right; margin-top:13px;}
+#hd::after{content: ''; display: block; clear: both;}
+
+#searchBox{
+    background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#searchBox .inBox{
+    width: 500px;
+    height: 650px;
+    background-color: #fff;
+    position: relative;
+}
+#searchBox h4{
+    border-bottom: 1px solid #c7c9d6;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 300;
+}
+#searchBox .btnClose{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    outline: 0; /*웹접근성에서는 비추*/
+}
+#searchBox ul{
+    border-bottom: 1px solid #a6a6a6;
+    display: flex;
+    text-align: center;
+}
+#searchBox ul li{
+    width: 33.33333%;
+    color: #8f8f8f;
+}
+#searchBox ul .act{
+    color: #ed5c6b;
+    font-weight: 500;
+    border-bottom: 3px solid #ed5c6b;
+}
+#searchBox ul li a{
+    display: block;
+    padding: 14px 0;
+}
+
+#searchBox div[class^=tabCon]{
+    background-color: #f5f6f1;
+    padding: 10px 12px;
+}
+#searchBox .tabCon1{}
+#searchBox .tabCon1 input{
+    background-color: #8291a4;
+    width: 100%;
+    border: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    color: #fff;
+    padding-right: 44px;
+}
+#searchBox .tabCon1 input::placeholder{
+    color: #eee;
+}
+#searchBox .tabCon1 form{position: relative;}
+#searchBox .tabCon1 button{position: absolute; top: 12px; right: 12px;}
+
+#searchBox .tabCon2{display:none; }
+#searchBox .tabCon3{display:none; }
+
+#searchBox .mess{
+    padding-top: 10px;
+    color: #949fb3;
+    font-size: 13px;
+}
+
+#ft{
+    background-color: #454d5a;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 25px;
+    height: 228px;
+}
+#ft .ft1{
+    width: 800px;
+    float: left;
+}
+#ft .ft1 .cost{font-size: 15px; font-weight: 400;}
+#ft .ft1 .cost span:nth-child(2){
+    display: inline-block; padding-left: 20px; padding-right: 14px;
+    border-right: 1px solid #fff; margin-right: 10px;
+    line-height: 0.8;
+}
+#ft .ft1 nav{}
+#ft .ft1 nav li{float: left;
+    font-size: 12px;
+    padding-right: 16px;
+    border-right: 1px solid #fff;
+    margin-right: 16px;
+    line-height: 0.8;
+    margin-top: 26px;
+}
+#ft .ft1 nav li:last-child{padding-right:0;border-right:0;margin-right:0}
+
+#ft .ft1 .copy{clear: both; padding-top: 14px; color: #a2a2ae;font-size: 12px;}
+    
+#ft .ft2{
+    width: 140px;
+    float: right;
+}
+#ft .ft2 li{
+    float: left;
+    padding-right: 14px;
+}
+
+#ft .ft3{
+    clear: both;
+    font-size: 13px;
+    padding-top: 25px;
+}
+
+#ft .ft3 img{float: left;}
+
+
+
+
+

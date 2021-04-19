@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*해당 사이트의 메인 페이지에만 적용할 스타일*/
+
+#cont{}
+#cont .mainBan{ height: 360px; position: relative;
+    background-image: url(../img/img_main_kn2.png);
+}
+#cont .mainBan .pos{position: absolute; left: 0; bottom: 0; width: 100%;}
+
+#cont .mainBan ul{background-color: rgba(255,255,255, 0.5);
+                    width: 80%; margin: auto; padding: 12px; overflow: auto;}
+#cont .mainBan ul li{float: left; text-align: center;
+    width: 25%;}
+#cont .mainBan ul li a{padding: 14px; display: block;
+    margin-right: 3px;background-color: #fff; }
+#cont .mainBan ul li a:hover{background-color: #979088; color: #fff; 
+    transition: 0.3s;}
+
+#cont .boardBox{display: flex;padding-top: 56px;}
+#cont .boardBox section{
+    width: 33.33333%;
+    border-right: 1px solid #eaeaea;
+    padding: 0 21px;
+    position: relative;
+}
+#cont .boardBox section h2{font-size: 15px; font-weight: 400;padding-bottom: 24px;}
+#cont .boardBox section ul{}
+#cont .boardBox section ul li{
+    padding-bottom: 27px;
+    font-size: 14px;
+}
+#cont .boardBox section ul li:last-child{
+    padding-bottom: 15px;
+}
+#cont .boardBox section ul li .date{
+    color: #968f85;
+    font-size: 13px;
+}
+#cont .boardBox section ul li .tit{
+    width: 255px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#cont .boardBox section ul li .tit:hover{
+    color: #fa6271;
+}
+#cont .boardBox section .more{
+    position: absolute;
+    top:0;
+    right: 21px; 
+    color: #8f918e;
+    font-size: 13px;
+}
+#cont .boardBox section .more:hover{color: #333;}
+#cont .boardBox .event h2{color: #0763a6; }
+#cont .boardBox .product{border: 0;}
+
+#cont .adBox{
+    padding-top: 48px;
+    padding-bottom: 100px;
+/*    overflow: auto;*/
+    height: 136px;
+}
+#cont .adBox img{width: calc(50% - 10px); float: left; margin-right: 10px;}
+
+
+
+
